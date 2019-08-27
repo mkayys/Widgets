@@ -2,6 +2,7 @@ import React from 'react';
 import Clock from './frontend/clock';
 import Tabs from './frontend/tabs';
 import Weather from './frontend/weather';
+import AutoComplete from './frontend/autocomplete';
 
 let tabsArr = [
     { title: 'First', content: "Hello, I'm  first" },
@@ -11,12 +12,12 @@ let tabsArr = [
 
 const Root = () => (
     <div>
-        <h1>React is working!</h1>
         <Clock />
         <div className='tabs-weather'>
             <Tabs tabsArr={tabsArr} />
             <Weather />
         </div>
+        <AutoComplete />
     </div>
 );
 
