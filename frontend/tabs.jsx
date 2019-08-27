@@ -20,14 +20,15 @@ class Tabs extends React.Component {
 
     render() {
         const tabTitles = this.props.tabsArr.map( (tab, idx) => {
-            return <h1 onClick={this.handleClick(idx)} key={idx}>{tab.title}</h1>
+            return <h1 className='tab-title' onClick={this.handleClick(idx)} key={idx}>{tab.title}</h1>
         });
 
         return (
-            <div className='tabs-container'>
-                <div>This is a tab</div>
-                <div>{tabTitles}</div>
-                <div>{this.props.tabsArr[this.state.selected].content}</div>
+            <div className='tabs-component'>Tabs
+                <div className='tabs-container'>
+                    <div className='tabs'>{tabTitles}</div>
+                    <div className='tab-content'>{this.props.tabsArr[this.state.selected].content}</div>
+                </div>
             </div>
         )
     }
