@@ -1,0 +1,27 @@
+.clock-component {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.clock-container {
+    border: 1px solid black;
+    padding: 20px;
+    width: 50vw;
+    margin: 0 auto;
+    background-color: lavender;
+}
+
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
