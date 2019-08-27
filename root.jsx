@@ -13,8 +13,10 @@ const Root = () => (
     <div>
         <h1>React is working!</h1>
         <Clock />
-        <Tabs tabsArr={tabsArr} />
-        <Weather />
+        <div className='tabs-weather'>
+            <Tabs tabsArr={tabsArr} />
+            <Weather />
+        </div>
     </div>
 );
 
