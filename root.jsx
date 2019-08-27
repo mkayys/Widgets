@@ -10,14 +10,14 @@ let tabsArr = [
     { title: 'Third', content: 'peach' }
 ]
 
-const Root = () => (
+const Root = (props) => (
     <div>
         <Clock />
         <div className='tabs-weather'>
             <Tabs tabsArr={tabsArr} />
             <Weather />
         </div>
-        <AutoComplete />
+        <AutoComplete names={props.names} />
     </div>
 );
 
