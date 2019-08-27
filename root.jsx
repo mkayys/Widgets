@@ -12,7 +12,7 @@ const Root = () => (
     <div>
         <h1>React is working!</h1>
         <Clock />
-        <Tabs />
+        <Tabs tabsArr={tabsArr} />
     </div>
 );
 
