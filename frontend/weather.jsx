@@ -1,4 +1,5 @@
 import React from 'react';
+import {weatherKey} from '../keys';
 
 class Weather extends React.Component {
     // constructor(props){
@@ -27,7 +28,8 @@ class Weather extends React.Component {
             let lat = position.coords.latitude;
             let lon = position.coords.longitude;
 
-            xmlhttp.open('GET', `http://api.openweather.map.org/data/2.5/weather?lat=${lat}&lon=${lon}`, true);
+
+            xmlhttp.open('GET', `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&id=524901&APPID=${weatherKey.APIKEY}`, true);
             xmlhttp.send();
         });
     }
