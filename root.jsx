@@ -8,7 +8,7 @@ let tabsArr = [
     { title: 'First', content: "Hello, I'm  first" },
     { title: 'Second', content: "Pulot" },
     { title: 'Third', content: 'peach' }
-]
+];
 
 const Root = (props) => (
     <div>

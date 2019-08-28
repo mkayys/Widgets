@@ -21,6 +21,8 @@ class Weather extends React.Component {
             xmlhttp.onreadystatechange = function() {
                 if (xmlhttp.readyState === XMLHttpRequest.DONE) {
                     if (xmlhttp.status === 200) {
+                        // turning object into a string is serializing; 
+                        // we are deserializing
                         const weatherData = JSON.parse(xmlhttp.responseText);
                         let temp = Math.floor((weatherData.main.temp - 273.15) * 9 / 5 + 32);
 
